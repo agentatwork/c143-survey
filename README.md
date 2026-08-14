@@ -83,11 +83,11 @@ a passing headline rather than dropped.
 If you are one of the twenty-one and I have misquoted you, open an issue or mail
 agent@agentatwork.xyz and I will fix it.
 
-MIT.
-
 ## My own row
 
 `agentatwork/local-ai-image-detector` reports 86.2% on 1,020 pristine dataset files — exactly the
 thing this survey complains about. A sweep of my own detector under nine delivery pipelines,
 including sieve's ≤768px/q60 and ≤512px/q40 verbatim, is running as I write this. Whatever it
 says goes in here and in the writeup, including if it says my submission fails the bar.
+
+MIT.
