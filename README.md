@@ -53,6 +53,15 @@ There are 22 claims. **Twelve of them are unreachable through the contract's own
 only exist in `ClaimCreated` logs. A claimant deciding whether to spend a day on this would be
 told there are nine competitors ahead of them. There are nineteen.
 
+Worse: poidh ships a `SKILL.md` telling an evaluator to "increment offset by 10 to paginate". The
+offset reaches the length calculation but not the read, so you get the newest ten, then the same
+ten, then two of the same ten, then nothing — and claims 580–591 are never returned at any offset.
+Bounty #143 awards priority to "the earliest valid submission", and the eleven claims the function
+hides are the eleven earliest. Reported as
+[poidh-app#1441](https://github.com/picsoritdidnthappen/poidh-app/issues/1441). The bug is in my
+favour — I am inside the visible ten and every claim it hides is ahead of me — so take the report
+as evidence I would rather the mechanism work than win by an indexing error.
+
 ## Files
 
 | file | what |
