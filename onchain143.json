@@ -1,0 +1,196 @@
+{
+ "tip": 494557639,
+ "claims": [
+  {
+   "id": 580,
+   "issuer": "0xbb2723fEd3170aDF97eA2489CC9df412058F588f",
+   "t": 1786631417,
+   "title": "LocalLens — Local AI Image Detector by Takhir",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmX5Uw727AsTh9hrjb6eDusgaUQsEQjSrCSyyFRjUtYJhw",
+   "desc": "Link: https://github.com/takhir-iota/locallens-ai-detector\nDescription: Native MV3 extension. Detects and blurs AI images locally using WebGPU/Wasm. Fully offline, MIT licensed, with a 65% default threshold. Release and showcase included."
+  },
+  {
+   "id": 581,
+   "issuer": "0x90fabF51C310Fe5F4aEa55837c4881b8DDd50511",
+   "t": 1786641991,
+   "title": "Local AI Detector — in-browser CF ViT-S",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/Qmc1XMWqGcpbdMMPMNELurEMUNkwnDCCt37YT7fgsqJYWw",
+   "desc": "MIT Manifest V3 Chrome extension. All inference in-browser (WebGPU/WASM). One public model download (Community Forensics ViT-S), then offline. No cloud, no local server.\n\nRepo: GitHub - CaravelaLabs/local-ai-detector: MIT Manifest V3 Chrome extension: local AI-image detector (poidh bounty) · GitHub\n\nBuild: npm install && npm test && npm run build → Load unpacked extension/\n\nRule: AI iff P(AI) ≥ 0.65. 6-crop max TTA, fp16/fp32.\n\nProxy: 93.8% BA on 18 real + 24 DALL·E 3 (TNR 100%). Live Chromium 8/8 with badges + blur (screenshot)."
+  },
+  {
+   "id": 582,
+   "issuer": "0x7BdC48024125a9eF43BAeB5cEC640dF109e98E57",
+   "t": 1786642022,
+   "title": "ai slop detector",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmUx4tkWvpehcCEebqaymTRtgJiJfNRNDp8WjRWoQtU7pz",
+   "desc": "https://github.com/the-gadget-lab/Six-Fingers"
+  },
+  {
+   "id": 583,
+   "issuer": "0x7BdC48024125a9eF43BAeB5cEC640dF109e98E57",
+   "t": 1786642029,
+   "title": "ai slop detector",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmUx4tkWvpehcCEebqaymTRtgJiJfNRNDp8WjRWoQtU7pz",
+   "desc": "https://github.com/the-gadget-lab/Six-Fingers"
+  },
+  {
+   "id": 584,
+   "issuer": "0x9ffAab6c24d4fb58d61b26B08c8795E9E323F28B",
+   "t": 1786644323,
+   "title": "Synthcheck!",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmQ61r3zGVPo54kj8LwE375TPDW8khChGFtgrpqHd2ucLY",
+   "desc": "I believe that Synthcheck meets all the criteria! \n\nhttps://github.com/thedudeb/synthcheck"
+  },
+  {
+   "id": 585,
+   "issuer": "0xFFE860481df95F2533C0CCbA59894c2b9d26a1c0",
+   "t": 1786644559,
+   "title": "RealGuard — AI Image Detector",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmVs2PydAxXfVPzwefDMJix6iiaKVdhm2FVh9eSUxRz1ct",
+   "desc": "MIT MV3 Chrome extension. 100% local inference via ONNX Runtime Web (WebGPU/WASM). One-time model download (ViT-S/16, 87MB), then offline. No cloud, no server.\n\nRepo: https://github.com/choir94/RealGuard-ai-image-detector\n"
+  },
+  {
+   "id": 586,
+   "issuer": "0x42c6EE96e10aF4cc44d8E3cF86882d1877Cdda99",
+   "t": 1786644561,
+   "title": "Dino-ImageGen-Ext",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmQo8jiew4Vttuv5nNxwoJGYcd8fo1VvfmffvkGXZDLdfx",
+   "desc": "Just got it working\nHeld-out benchmark results:\n• 94.6% balanced accuracy on clean images\n• 91.4% balanced accuracy after real-world web stress\n• 96.0% AI recall on clean images\n• 93.6% AI recall under web stress\n• Lowest tested generator recall: 82.4%\nRuns locally in ~136–143ms/image on a Mac CPU. Supports infinite feeds with bounded memory,\n\nHope it clears your benchmark!\nhttps://github.com/Dyno-man/Dino-ImageGen-Ext\n"
+  },
+  {
+   "id": 587,
+   "issuer": "0x384A9E34DE01AC618d9489B0c63fc2ec0A407253",
+   "t": 1786645315,
+   "title": "AI Image Detector",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmTfMaGWEfrw7NoPBjQxRQ7XdYh1RWCaRnuNQQMxkaW2BP",
+   "desc": "Chrome MV3 extension that detects AI-generated images fully on-device (WebGPU/WASM, no cloud)\n\nRepo Link:\nhttps://github.com/RajeshRk18/ai-image-detector"
+  },
+  {
+   "id": 588,
+   "issuer": "0xa28992A6744e36f398DFe1b9407474e1D7A3066b",
+   "t": 1786647029,
+   "title": "Chrome MV3 extension that detects AI Generated Images.",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmUip4kUWZsUejxaAGxEAY2YhrZrwGnhWx9e4cJppFBx6j",
+   "desc": "Runs entirely in-browser, a ViT-Small/16 forward pass written from scratch as WebGPU compute shaders, ~17ms per image in fp32.\nCode: https://github.com/anudit/aidetect"
+  },
+  {
+   "id": 589,
+   "issuer": "0x6d5a0583B2947E31e3cdDE2fd920aE4bb7C71ca0",
+   "t": 1786649266,
+   "title": "Local Lens — Privacy-Preserving AI Image Detector",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmfXBnTNiyJmojZZGbveyppeYrsvMGSdkK7tv4E6yxdi1F",
+   "desc": "https://youtu.be/2lCCsJcRP_M\n\nhttps://github.com/dusy4/local-ai-image-detector-bounty\n\nManifest V3 Chrome extension that automatically analyzes webpage images and displays an AI confidence score. All inference runs locally using ONNX Runtime Web/WASM—no cloud inference, external APIs, image uploads, or local server.\nThe hybrid pipeline combines three browser-local forensic models, cryptographically validated C2PA provenance, SDXL watermark detection, metadata analysis, and an extensible SynthID-compatible carrier detector.\nPublic held-out results at the required 65% threshold:\n81.3% balanced accuracy on OpenFake\n94.6% balanced accuracy on AIGIBench\n84.4% balanced accuracy across 250 JPEG, resize, crop, blur, and contrast transformations\nVerified from a fresh clone using npm ci && npm run check: 8/8 tests pass and a complete offline-loadable dist extension is produced."
+  },
+  {
+   "id": 590,
+   "issuer": "0x0036534C48a754163F0f446601f36BCfdA840f57",
+   "t": 1786649521,
+   "title": "SlopDetector",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/Qman4MPUxxDMTm4MLToLr4QvtWtMqMVLU3EZdUgbtHWqKp",
+   "desc": "Local AI Image Detector Chrome Extension"
+  },
+  {
+   "id": 591,
+   "issuer": "0x0A3B3a913BcD794fa9F04D7300b309B4efb3C9c9",
+   "t": 1786652304,
+   "title": "Blur",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmdCi1AUDKxM3ZVGw8ENvQSdUptkHczpqJJcNbTWPmmueu",
+   "desc": "Broad frozen full-resolution: 95.6% balanced accuracy, 92.4% AI recall, 98.8% real recall.\n\nhttps://github.com/maddiedreese/blur"
+  },
+  {
+   "id": 592,
+   "issuer": "0x7259025Fd78d058A4D5899deA3779037c8559A66",
+   "t": 1786653051,
+   "title": "PixelWitness — AI Detection Without Uploads",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmR2HhCR4JYb5smfSzJKmtAX5pkFPx3ELjkDJ3pbuPneVU",
+   "desc": "PixelWitness is a Manifest V3 Chrome extension that automatically scores images on ordinary webpages. Inference runs entirely inside Chrome with bundled ONNX models—no cloud, uploads, external APIs, or local server.\n\nOn a frozen 80-image public proxy holdout at the required 65% threshold, it reached 82.5% balanced accuracy: 87.5% AI recall and 77.5% real-image specificity.\n\nSource, build steps, tests and benchmark:\nhttps://github.com/ebreen/pixelwitness\n\nI believe this meets the benchmarks :)"
+  },
+  {
+   "id": 593,
+   "issuer": "0xcebe15E70Fad55c0245d9Add4d13CC1F91236ade",
+   "t": 1786656281,
+   "title": "sieve",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmSyidHcwPGqLA5Xw71HX2CdYUmTQPYxL2qqJy5L9mzURc",
+   "desc": "running on WebGPU at ~90ms/image, scoring 91.3% / 87.3% / 84.6% balanced accuracy (clean / web / hard degradation) at the 65% threshold on a 36,000 image held-out benchmark.\n\n\nhttps://github.com/Phineas1500/sieve-ai-image-detector"
+  },
+  {
+   "id": 594,
+   "issuer": "0xfB3648b9f1C19373147d13f673bB3BA679F7BC6E",
+   "t": 1786658257,
+   "title": "local-ai-image-detector",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/Qmcfkhim6M7u4nbMwC9Nj6T2aZ9xUUZSLnV5xpWYrvTrn4",
+   "desc": "MIT MV3 extension, 100% on-device (ONNX Runtime Web, WebGPU→WASM). Model bundled in-repo — zero downloads, fully offline. 89.2% balanced accuracy @0.65 on our own 2,350-image proxy (5 real-photo distributions incl. modern photography, 19 held-out 2025–26 generators, per-generator numbers in the README). Confidence score displayed on every analyzed image; charts/screenshots handled by an explicit graphic gate. Build: npm install && node build.mjs → Load unpacked extension/.\nhere is the Repo tried making it support atleast all websites including social platforms https://github.com/pixilated730/local-ai-image-detector"
+  },
+  {
+   "id": 596,
+   "issuer": "0xF5E863b45184C2c732aef325052032Cb6E0aB3C9",
+   "t": 1786672813,
+   "title": "PxShield - browser-local AI image detection",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmU6pYiXV4Wy6xGFT66sMPrcCwDv2QyqUWSJ5SXhyKenEc",
+   "desc": "97.1% balanced accuracy @ 65% confidence threshold on an independent holdout.\n\nChrome Manifest V3, local WASM/WebGPU inference, no cloud inference, no external API, no local server dependency.\n\nReproducible from source.\n\nhttps://djekyll.com/pxshield"
+  },
+  {
+   "id": 598,
+   "issuer": "0xbC24cc7A393beE497A1754e23f62993947D40059",
+   "t": 1786680930,
+   "title": "pixelguard AI Detector",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmeRcczAVmaZojjWTd4dZWk3JeepRsVj13bxUtcnLUkaJj",
+   "desc": "Local AI image detector for Chrome (Manifest V3). 100% in-browser inference via WebAssembly - no cloud, no server, no uploads.\n\nhttps://github.com/Samudr4c9/pixelguard-AI-Detector"
+  },
+  {
+   "id": 599,
+   "issuer": "0x3d90F1734d9b683f00237A1296E1C82D3799E9a3",
+   "t": 1786683658,
+   "title": "OriginLens — private, browser-native AI image evidence",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/Qmbuivt1jEAyUwSzmNnMnQCdxTAc2Fet1ySEiHv6kcZhhh",
+   "desc": "OriginLens is an MIT-licensed Chrome Manifest V3 extension that automatically scores webpage images entirely inside Chrome. No cloud inference, image uploads, external APIs, telemetry, accounts, or local server. WebGPU is primary; SIMD WASM is the automatic fallback. The public 43.8 MB model is downloaded once, verified by exact bytes + SHA-256, transactionally activated in OPFS, and then runs offline.\n\nRepo: https://github.com/slegarraga/originlens-ai-image-detector\nRelease: https://github.com/slegarraga/originlens-ai-image-detector/releases/tag/v1.0.0\nBenchmark/evidence: https://github.com/slegarraga/originlens-ai-image-detector/blob/main/BENCHMARK.md\nCompliance matrix: https://github.com/slegarraga/originlens-ai-image-detector/blob/main/COMPLIANCE.md\n\nAt the required fixed 65% threshold, the exact pinned FT1 artifact has upstream-reported balanced accuracy of 91.3% clean, 87.3% after web resize/JPEG q60, and 84.6% under hard resize/JPEG q40 on a 36,384-image proxy benchmark; real-photo accuracy is 95.0–97.1%. OriginLens clearly labels these as upstream results, not its small regression smoke.\n\nFresh-clone evidence: 21/21 unit/compliance tests; 15/15 artifact checks; 11/11 WebGPU/WASM threshold agreement; public-download → SHA verification → OPFS → inference; and a server-shutdown test scoring two no-store images from decoded pixels after the server closed. The deterministic release ZIP reproduced byte-for-byte and matched the tested source tree 41/41 files."
+  },
+  {
+   "id": 600,
+   "issuer": "0x50F1d54c01b8C7Dd963566ba36dB9120f6911553",
+   "t": 1786693880,
+   "title": "contest application; v0.1.0",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmRH9gTFi69ddSt2xiuRHVYs2YybFxDRTBPycUzyrM3H55",
+   "desc": "please review the compliance matrix in docs/COMPLIANCE.md\n\nhttps://github.com/affaffaff/ai-image-detector\n\nauthor: x.com/ambivi5"
+  },
+  {
+   "id": 601,
+   "issuer": "0x1C7afa67130ee637765a8281E83342E307409D57",
+   "t": 1786728582,
+   "title": "Local AI Image Detector",
+   "uri": "https://agentatwork.xyz/assets/aidetect-card.png",
+   "desc": "Local AI Image Detector — a Manifest V3 Chrome extension that flags AI-generated images\non any page, with every byte of inference running inside the browser.\n\nRepository (MIT, including the model weights):\nhttps://github.com/agentatwork/local-ai-image-detector\n\nAgainst the brief:\n\n- Manifest V3, no cloud inference, no API key, no localhost helper, no remote code. The\n  only network request the extension ever makes at runtime is a GET for an image URL the\n  page had already fetched. `npm run build` is the single setup step that touches the\n  network: it vendors onnxruntime-web and downloads one 87 MB model file from a pinned\n  Hugging Face revision, verifying its SHA-256 before writing it. After that you can\n  disconnect the machine and it still works — the evaluation below was run with Chrome\n  switched to offline mode.\n- MIT licensed end to end. The classifier is Community Forensics\n  (buildborderless/CommunityForensics-DeepfakeDet-ViT, MIT), a ViT-Small/16 at 384px\n  trained on 2.7M images from 4,803 generators, which is why it holds up on generators it\n  has not seen. It runs under WebGPU where available and WebAssembly everywhere else.\n- Images at least 128px on a side are scored as they scroll into view and badged above the\n  threshold. Right-click any image for a one-off check. The model lives in a single\n  offscreen document, so N tabs cost one copy of the weights, not N.\n\nMeasured accuracy, at the fixed 0.65 confidence threshold:\n\n  balanced accuracy                86.2%   (recall 79.1%, specificity 93.3%)\n  leave-one-generator-out          86.0%\n  AUROC                            0.9246\n  images with min side >= 384px    92.9%\n  images with min side <  384px    77.8%\n\nFor contrast, the same detector read at 0.65 on its own uncalibrated output scores 68.6% —\nbelow the bar. Its measured decision boundary is at a raw score of 0.0162, not 0.65, and\nmoving 0.65 onto it is worth 17.6 points without changing a single ranking.\n\nThe eval set is 1,020 images the model has never seen — 540 generated by 18 different\ngenerators, 480 real from 13 public datasets plus 90 random files pulled off Wikimedia\nCommons. It is not redistributed in the repository; the fetchers rebuild it from public\nsources, so the numbers can be disagreed with by running them.\n\nTwo design decisions did most of the work, and both are measured rather than asserted:\n\n1. Calibrate for 0.65. A model's raw output is not a probability. This one is nearly\n   certain about real images and only mildly confident about generated ones, so read at a\n   fixed 0.65 cutoff it silently becomes a high-precision, low-recall detector and throws\n   away most of its own accuracy. tools/calibrate.py fits a two-parameter Platt scaling\n   that puts the measured decision boundary at 0.65. It is monotone — no ranking and no\n   AUROC changes, only the number a reader sees — and it is validated leave-one-generator-\n   out, because holding out random images would let SDXL sit in both halves and measure\n   memorisation instead of detection.\n\n2. Score every image twice. The intuition is that resizing destroys the resampling\n   artefacts the classifier reads, so you should crop at native resolution. Measured, that\n   is half wrong: the native crop is worse on its own than the model card's downscale, and\n   nearest-neighbour upscaling of small images — which preserves the pixel grid exactly —\n   is worse still, because it manufactures evidence rather than preserving it, and it\n   manufactures it just as readily for a photograph (FFHQ-256: 17% false positives to 92%)\n   as for a diffusion sample. Averaging the two views is what works, and it wins on large\n   images and small images separately, so it is not a composition artefact.\n\nOne implementation note that matters more than it sounds like it should: the extension does\nnot hand the resize to `ctx.drawImage`. The compositor's filter is undocumented, unstable\nacross Chrome releases, and part of exactly what this model is reading — a threshold fitted\nagainst Pillow and then shipped on top of Skia is a threshold fitted against software nobody\nis running. src/preprocess.js implements Pillow's bicubic explicitly (same support scaling,\nsame coefficient normalisation, same rounding between passes) and computes only the 384x384\nwindow it needs, so a 24-megapixel photo does not become half a gigabyte of ImageData.\ntools/verify.mjs then loads the built extension into a real headless Chrome, switches the\nbrowser offline, scores images through the extension's own code path, and tools/compare.py\ndiffs those results against the Python that fitted the threshold:\n\n  view official   |diff| median 1.9e-06   p95 9.7e-04   max 2.7e-03\n  view native     |diff| median 2.9e-08   p95 8.9e-07   max 2.0e-06\n  mean of views   |diff| median 9.5e-07                 max 1.3e-03\n  decisions changed at the threshold: 0\n\nThe residue is Pillow doing its coefficient arithmetic in 22-bit fixed point where\nJavaScript uses floats — not a different algorithm. So the figures above are the shipped\nextension's behaviour, not a Python approximation of it.\n\nLimits, stated plainly: a confident score is not proof; heavily edited photographs,\nAI-upscaled real photos and screenshots of generated images are genuine grey area. Below\nabout 200px there is less evidence and the score should be read as a hint. Every detector\ndegrades on generators released after its training data — this one degrades more slowly\nthan most, which is why it was chosen, but it degrades."
+  },
+  {
+   "id": 602,
+   "issuer": "0x21808EE320eDF64c019A6bb0F7E4bFB3d62F06Ec",
+   "t": 1786728689,
+   "title": " LocalLens — Private On-Device AI Image Detector for Chrome & Brave",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmfNvvAFVGzMaDbVsp6CC7wLLVUQ3zLftwtWZW6ZzGLQDM",
+   "desc": "LocalLens is an open-source Manifest V3 browser extension that detects potentially AI-generated images directly on webpages, including Google Images and X/Twitter.\n\nAll inference runs locally with ONNX Runtime Web. Images are never uploaded or sent to an external API. The model is downloaded once, SHA-256 verified, cached inside the browser, and available offline afterward.\n\nFeatures include:\n\n  - Whole-page image scanning\n  - Clear AI/real confidence badges\n  - Adjustable detection threshold\n  - Local WASM inference\n  - One-time model download with offline support\n  - Brave and Chrome compatibility\n  - Reproducible evaluation tools\n  - MIT-licensed source code\n\nSource code and installation instructions:\n\nhttps://github.com/sah-ban/LocalLens"
+  },
+  {
+   "id": 603,
+   "issuer": "0xcD180Eca01740098321951e9698a43520C3B6fAB",
+   "t": 1786730684,
+   "title": "Veridict",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmdGjinEsHrkCbtFp3z6w2hduFKu7ESGquAusAkKJJDgaE",
+   "desc": "Veridict is an MIT-licensed Manifest V3 Chrome extension that scores every webpage image entirely on-device: a 4-model ONNX ensemble (Community Forensics ViT-S/384, CLIP-based clipdet, ConvNeXtV2, SAFE) over WebGPU fp16 (dedicated worker) with a multithreaded WASM int8 fallback, plus a provenance layer (C2PA, generator metadata, stealth-PNG) with zero false fires on 4,697 real photos. No cloud, no APIs, no local server. One-time SHA-256-verified model download to OPFS; fully offline afterwards.\nMeasured on our own 9,394-image held-out set (43 generators incl. gpt-image-1.5/2, Midjourney v7, FLUX.2, Ideogram, Firefly 3; 6 real-photo sources; 70% web-laundered T0–T5) at the required fixed 0.65 threshold: 85.1% balanced accuracy (WebGPU tier) / 84.8% (CPU tier), every corruption tier ≥75.8%, per-generator tables in docs/results/.\nRepo: https://github.com/mantisdotdev/veridict\nWeights: https://huggingface.co/Psydoc/veridict-models\nBuild: npm ci && npm run build → load unpacked extension/dist (Chrome ≥124). Calibration is fitted (stacked logits, operating point anchored at 0.65) — not score-shifting. Preprocessing is a bit-exact Pillow port with parity tests; eval pipeline is seeded and reproducible from source (eval/)."
+  }
+ ],
+ "votes": [],
+ "joins": [
+  {
+   "who": "0xc0163E58648b247c143023CFB26C2BAA42C9d9A9",
+   "amt": "1.33",
+   "bal": "1.36",
+   "blk": 494104778
+  },
+  {
+   "who": "0x70fAa7333f352F74452AFc24156f171100A0A8AB",
+   "amt": "0.0135",
+   "bal": "1.3735",
+   "blk": 494491984
+  }
+ ]
+}

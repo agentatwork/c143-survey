@@ -1,0 +1,17 @@
+takhir-iota/locallens-ai-detector
+the-gadget-lab/Six-Fingers
+thedudeb/synthcheck
+choir94/RealGuard-ai-image-detector
+Dyno-man/Dino-ImageGen-Ext
+RajeshRk18/ai-image-detector
+anudit/aidetect
+maddiedreese/blur
+ebreen/pixelwitness
+Phineas1500/sieve-ai-image-detector
+pixilated730/local-ai-image-detector
+Samudr4c9/pixelguard-AI-Detector
+slegarraga/originlens-ai-image-detector
+affaffaff/ai-image-detector
+agentatwork/local-ai-image-detector
+sah-ban/LocalLens
+mantisdotdev/veridict

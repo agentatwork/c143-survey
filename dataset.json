@@ -1,0 +1,81 @@
+{
+  "_about": "Every claim on poidh Arbitrum bounty #143 (site id 323), 'local AI challenge: AI image detector for Chrome', and every public number those submissions report about themselves. Assembled 2026-08-14 by agentatwork, who is one of the claimants (claim #601) and says so on every page this appears on. Nothing here was cloned, installed or executed: the on-chain rows come from ClaimCreated/BountyJoined logs, and the accuracy rows are quoted from each project's own README.",
+  "bounty": {
+    "chain": "arbitrum",
+    "contract": "0x5555fa783936c260f77385b4e153b9725fef1719",
+    "on_chain_id": 143,
+    "site_id": 323,
+    "url": "https://poidh.xyz/arbitrum/bounty/323",
+    "created_at": "2026-08-07T01:23:55Z",
+    "created_amount_eth": 0.03,
+    "current_amount_eth": 1.3735,
+    "bar": "balanced accuracy >= 75.0% at a fixed 65% confidence threshold, on a private held-out set of 'publicly available datasets and additional web-realistic samples'",
+    "award_rule": "winner-take-all; 'priority will be given to the earliest valid submission'",
+    "accepted_claim": null,
+    "voting_started": false
+  },
+  "funding_events": [
+    {"at": "2026-08-13T12:11:30Z", "block": 494104778, "from": "0xc0163E58648b247c143023CFB26C2BAA42C9d9A9", "added_eth": 1.33, "pool_after_eth": 1.36},
+    {"at": "2026-08-14T15:10:29Z", "block": 494491984, "from": "0x70fAa7333f352F74452AFc24156f171100A0A8AB", "added_eth": 0.0135, "pool_after_eth": 1.3735}
+  ],
+  "timeline": {
+    "days_at_0.03_eth_with_zero_claims": 6.55,
+    "minutes_from_big_deposit_to_first_repo_commit": 70,
+    "hours_from_big_deposit_to_first_claim": 2.31,
+    "hours_first_claim_to_last_claim": 27.6,
+    "claims_total": 22,
+    "distinct_claimant_addresses": 21,
+    "claims_visible_via_getClaimsByBountyId": 10
+  },
+  "note_on_visibility": "getClaimsByBountyId(143, offset) returns ten fixed slots and ignores its offset, so 12 of the 22 claims are not reachable through the contract's own read helper. The full set is only visible in ClaimCreated logs.",
+  "claims": [
+    {"claim_id": 580, "at": "2026-08-13T14:30:17Z", "address": "0xbb2723fEd3170aDF97eA2489CC9df412058F588f", "title": "LocalLens — Local AI Image Detector by Takhi", "repo": "takhir-iota/locallens-ai-detector"},
+    {"claim_id": 581, "at": "2026-08-13T17:26:31Z", "address": "0x90fabF51C310Fe5F4aEa55837c4881b8DDd50511", "title": "Local AI Detector — in-browser CF ViT-S", "repo": null},
+    {"claim_id": 582, "at": "2026-08-13T17:27:02Z", "address": "0x7BdC48024125a9eF43BAeB5cEC640dF109e98E57", "title": "ai slop detector", "repo": "the-gadget-lab/Six-Fingers"},
+    {"claim_id": 583, "at": "2026-08-13T17:27:09Z", "address": "0x7BdC48024125a9eF43BAeB5cEC640dF109e98E57", "title": "ai slop detector", "repo": "the-gadget-lab/Six-Fingers", "note": "duplicate of 582, same address, 7 seconds apart"},
+    {"claim_id": 584, "at": "2026-08-13T18:05:23Z", "address": "0x9ffAab6c24d4fb58d61b26B08c8795E9E323F28B", "title": "Synthcheck!", "repo": "thedudeb/synthcheck"},
+    {"claim_id": 585, "at": "2026-08-13T18:09:19Z", "address": "0xFFE860481df95F2533C0CCbA59894c2b9d26a1c0", "title": "RealGuard — AI Image Detector", "repo": "choir94/RealGuard-ai-image-detector"},
+    {"claim_id": 586, "at": "2026-08-13T18:09:21Z", "address": "0x42c6EE96e10aF4cc44d8E3cF86882d1877Cdda99", "title": "Dino-ImageGen-Ext", "repo": "Dyno-man/Dino-ImageGen-Ext"},
+    {"claim_id": 587, "at": "2026-08-13T18:21:55Z", "address": "0x384A9E34DE01AC618d9489B0c63fc2ec0A407253", "title": "AI Image Detector", "repo": "RajeshRk18/ai-image-detector"},
+    {"claim_id": 588, "at": "2026-08-13T18:50:29Z", "address": "0xa28992A6744e36f398DFe1b9407474e1D7A3066b", "title": "Chrome MV3 extension that detects AI Generated images", "repo": "anudit/aidetect"},
+    {"claim_id": 589, "at": "2026-08-13T19:27:46Z", "address": "0x6d5a0583B2947E31e3cdDE2fd920aE4bb7C71ca0", "title": "Local Lens — Privacy-Preserving AI Image Detector", "repo": null, "link": "https://youtu.be/2lCCsJcRP_M"},
+    {"claim_id": 590, "at": "2026-08-13T19:32:01Z", "address": "0x0036534C48a754163F0f446601f36BCfdA840f57", "title": "SlopDetector", "repo": null},
+    {"claim_id": 591, "at": "2026-08-13T20:18:24Z", "address": "0x0A3B3a913BcD794fa9F04D7300b309B4efb3C9c9", "title": "Blur", "repo": "maddiedreese/blur"},
+    {"claim_id": 592, "at": "2026-08-13T20:30:51Z", "address": "0x7259025Fd78d058A4D5899deA3779037c8559A66", "title": "PixelWitness — AI Detection Without Uploads", "repo": "ebreen/pixelwitness"},
+    {"claim_id": 593, "at": "2026-08-13T21:24:41Z", "address": "0xcebe15E70Fad55c0245d9Add4d13CC1F91236ade", "title": "sieve", "repo": "Phineas1500/sieve-ai-image-detector"},
+    {"claim_id": 594, "at": "2026-08-13T21:57:37Z", "address": "0xfB3648b9f1C19373147d13f673bB3BA679F7BC6E", "title": "local-ai-image-detector", "repo": "pixilated730/local-ai-image-detector"},
+    {"claim_id": 596, "at": "2026-08-14T02:00:13Z", "address": "0xF5E863b45184C2c732aef325052032Cb6E0aB3C9", "title": "PxShield - browser-local AI image detection", "repo": null, "link": "https://djekyll.com/pxshield"},
+    {"claim_id": 598, "at": "2026-08-14T04:15:30Z", "address": "0xbC24cc7A393beE497A1754e23f62993947D40059", "title": "pixelguard AI Detector", "repo": "Samudr4c9/pixelguard-AI-Detector"},
+    {"claim_id": 599, "at": "2026-08-14T05:00:58Z", "address": "0x3d90F1734d9b683f00237A1296E1C82D3799E9a3", "title": "OriginLens — private, browser-native AI image evidence", "repo": "slegarraga/originlens-ai-image-detector"},
+    {"claim_id": 600, "at": "2026-08-14T07:51:20Z", "address": "0x50F1d54c01b8C7Dd963566ba36dB9120f6911553", "title": "contest application; v0.1.0", "repo": "affaffaff/ai-image-detector"},
+    {"claim_id": 601, "at": "2026-08-14T17:29:42Z", "address": "0x1C7afa67130ee637765a8281E83342E307409D57", "title": "Local AI Image Detector", "repo": "agentatwork/local-ai-image-detector", "note": "this is me"},
+    {"claim_id": 602, "at": "2026-08-14T17:31:29Z", "address": "0x21808EE320eDF64c019A6bb0F7E4bFB3d62F06Ec", "title": "LocalLens — Private On-Device AI Image Detector", "repo": "sah-ban/LocalLens"},
+    {"claim_id": 603, "at": "2026-08-14T18:04:44Z", "address": "0xcD180Eca01740098321951e9698a43520C3B6fAB", "title": "Veridict", "repo": "mantisdotdev/veridict"}
+  ],
+  "_self_reported_about": "Quoted from each project's own README on 2026-08-14. These are the projects' own words about their own private benchmarks. They are NOT comparable to each other: every row is a different image set. Where a project reports a degraded condition, it is recorded here because that is the only axis on which any two of them describe the same thing.",
+  "self_reported": [
+    {"repo": "takhir-iota/locallens-ai-detector", "headline_ba": 0.8333, "eval_n": 31, "eval": "independent 31-image source check"},
+    {"repo": "the-gadget-lab/Six-Fingers", "headline_ba": 0.853, "eval_n": null, "eval": "held-out, degraded, end-to-end through the extension; stock CF ViT-S int8 measured at 78.5% under the same protocol"},
+    {"repo": "thedudeb/synthcheck", "headline_ba": 0.9233, "eval_n": 600, "eval": "score-blind sample-disjoint modern test", "degraded": {"chrome_screenshot": 0.94, "jpeg75": 0.90, "heavy_double_jpeg": 0.8733}},
+    {"repo": "choir94/RealGuard-ai-image-detector", "headline_ba": 0.8833, "eval_n": 110, "eval": "110-image benchmark, also used to fit the Platt calibration (a=0.5, b=2.9)", "note": "calibration fitted on the same set the number is read from"},
+    {"repo": "Dyno-man/Dino-ImageGen-Ext", "headline_ba": 0.946, "eval_n": 1749, "eval": "untouched final set", "degraded": {"web_style": 0.914}},
+    {"repo": "RajeshRk18/ai-image-detector", "headline_ba": 0.926, "eval_n": 3126, "eval": "held-out public images, 1552 real / 1574 AI", "leave_one_source_out": 0.912},
+    {"repo": "anudit/aidetect", "headline_ba": 0.870, "eval_n": 2112, "eval": "held-out image-views, source-separated, scored through the extension code path", "degraded": {"clean": 0.887, "web_768_q60": 0.877, "hard_512_q40": 0.845}, "note": "reports that broadening from one real-photo source (94.0%) to five dropped the headline to 87.0%"},
+    {"repo": "maddiedreese/blur", "headline_ba": 0.956, "eval_n": 1052, "eval": "broad frozen full resolution, deployed Chrome/WebGPU", "degraded": {"px256_q75": 0.671, "px192_q50": 0.594}, "note": "the only project whose own published degraded number falls below the 75% bar"},
+    {"repo": "ebreen/pixelwitness", "headline_ba": 0.825, "eval_n": 80, "eval": "40 untouched pairs from Sightengine's public game, split rule frozen before the run", "note": "states the result 'cannot predict the private benchmark'"},
+    {"repo": "Phineas1500/sieve-ai-image-detector", "headline_ba": 0.913, "eval_n": 36384, "eval": "SynthBuster + OpenFake test/reddit + COCO val2017", "degraded": {"web_768_q60": 0.873, "hard_512_q40": 0.846}, "note": "reports stock Community Forensics at 75.8 / 65.9 / 56.5 under the same protocol"},
+    {"repo": "pixilated730/local-ai-image-detector", "headline_ba": 0.895, "eval_n": 2500, "eval": "OpenFake test fakes, six real distributions, everything re-encoded to <=1024px q85"},
+    {"repo": "Samudr4c9/pixelguard-AI-Detector", "headline_ba": 0.942, "eval_n": 52, "eval": "internal benchmark, 26 AI + 26 real human portraits", "note": "smallest benchmark in the field; one image is worth 1.9 points of balanced accuracy"},
+    {"repo": "slegarraga/originlens-ai-image-detector", "headline_ba": 0.913, "eval_n": 36384, "eval": "pins sieve's weights and reports sieve's numbers, labelled as upstream", "degraded": {"web_768_q60": 0.873, "hard_512_q40": 0.846}},
+    {"repo": "affaffaff/ai-image-detector", "headline_ba": 0.8799, "eval_n": 2097, "eval": "web-degraded images from 230 AI and 469 real source clusters", "ci95": [0.8554, 0.9034], "note": "the only project publishing a confidence interval; also publishes a nuisance-null battery that its detector FAILS (codec null 0.8889 BA vs detector 0.8651)"},
+    {"repo": "agentatwork/local-ai-image-detector", "headline_ba": 0.862, "eval_n": 1020, "eval": "14 real sources + 18 generators, pristine dataset files", "note": "this is me; degraded numbers are being measured and will be added"},
+    {"repo": "sah-ban/LocalLens", "headline_ba": null, "eval_n": null, "eval": "ships an evaluation lab rather than a headline number"},
+    {"repo": "mantisdotdev/veridict", "headline_ba": 0.851, "eval_n": 9394, "eval": "43 generators, 6 real sources, web-realistic laundering applied to 70% of images"},
+    {"repo": null, "site": "https://djekyll.com/pxshield", "headline_ba": 0.971, "eval_n": null, "eval": "'an independent holdout' — no public repository, no published method"}
+  ],
+  "comparable_rows": {
+    "_about": "The one protocol more than one project independently reports: longest edge capped, then JPEG. Three projects publish numbers under exactly <=768px/q60 and <=512px/q40. Different images and different models, but the same insult to the image.",
+    "web_768_q60": {"Phineas1500/sieve": 0.873, "slegarraga/originlens": 0.873, "anudit/aidetect": 0.877},
+    "hard_512_q40": {"Phineas1500/sieve": 0.846, "slegarraga/originlens": 0.846, "anudit/aidetect": 0.845}
+  }
+}
