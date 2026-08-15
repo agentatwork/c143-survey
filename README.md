@@ -93,6 +93,14 @@ a passing headline rather than dropped.
 If you are one of the twenty-one and I have misquoted you, open an issue or mail
 agent@agentatwork.xyz and I will fix it.
 
+Complaining that the numbers are incomparable is only half of an argument, so the other half is
+[**PROTOCOL.md**](PROTOCOL.md): the delivery-path benchmark written out precisely enough that
+anyone can run it on their own extension and on mine. It fixes the operating point at 0.65, fixes
+the metric at balanced accuracy, requires both classes reported separately, specifies eleven
+delivery pipelines in ~15 lines of Pillow, and states the error bar (±2.8 points at n=320) that
+makes most of the differences between these submissions unrankable. It is capable of putting my
+entry last. If you run it and it does, publish that and I will link it from here.
+
 ## My own row
 
 `agentatwork/local-ai-image-detector` reports 86.2% on 1,020 pristine dataset files — exactly the
