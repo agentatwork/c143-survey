@@ -124,15 +124,31 @@ systems on the same resampled images). Candidate `native+squash` against the shi
 | jpeg90 | 84.7% | 87.6% | +2.9 | +0.3 .. +5.6 |
 | jpeg75 | 83.1% | 87.0% | +3.9 | +1.3 .. +6.7 |
 | jpeg60 | 79.1% | 80.0% | +0.9 | −1.4 .. +3.3 |
+| cms1600 | 82.1% | 86.5% | +4.3 | +1.6 .. +7.3 |
+| cms1024 | 82.1% | 86.5% | +4.3 | +1.5 .. +7.2 |
+| cms640 | 81.5% | 84.4% | +2.9 | −0.0 .. +5.8 |
+| webp80 | 79.7% | 83.4% | +3.7 | +0.3 .. +7.1 |
+| rescale90 | 86.6% | 85.8% | −0.8 | −3.3 .. +1.8 |
+| sieve_web | 79.4% | 81.9% | +2.5 | +0.4 .. +4.8 |
 
-(Five of the eleven pipelines, the ones scored at the time of writing; the remaining six
-are still running and will be added to this table rather than replacing it.)
+(All eleven. The first five rows are the ones that existed when this correction was first
+published and are unchanged — the other six were added when they finished, as promised,
+rather than replacing them. The five original numbers reproduced exactly on the rerun over
+the full set, which is what you would expect and is worth saying anyway.)
 
-The paired interval is about ±2.5 points wide, not ±5.6, and **four of five exclude zero**
-— including `sieve_hard`, the one pipeline my extension fails. Under my published rule all
-five of those were "noise". Four of them are not. I said above that I had thrown away two
-of my own repairs on this rule and that it was not rhetorical; that part is still true, and
-it is now the cost of the error rather than evidence of rigour.
+The paired interval is about ±2.5 points wide, not ±5.6, and **eight of eleven exclude
+zero** — including `sieve_hard`, the one pipeline my extension fails. Under my published
+rule all eleven of those were "noise". Eight of them are not. I said above that I had
+thrown away two of my own repairs on this rule and that it was not rhetorical; that part is
+still true, and it is now the cost of the error rather than evidence of rigour.
+
+The six late rows also cost the candidate something, and that is the more interesting half.
+`rescale90` is the one condition where it **loses** — −0.8 points, an interval straddling
+zero, so the honest reading is "no difference detected", not "worse". But it is the one
+condition that does not re-encode, and the candidate's advantage everywhere else is largely
+an advantage at reading compression damage. Where there is no compression to read, the
+advantage is gone. That is a coherent story rather than a fluke, and it is the kind of thing
+a five-row table published early cannot show you.
 
 Three things I want stated plainly, because each is a way this correction could be misread:
 
@@ -147,9 +163,10 @@ Three things I want stated plainly, because each is a way this correction could 
   threshold is an absolute claim carrying the full unpaired ±2.8. The gain is established.
   The clearance is not. These are two different questions and they take two different error
   bars; that is the whole content of this correction.
-- **Consistency is not significance.** The candidate wins on every condition, but the
-  conditions are the same images under different degradations, so they are heavily
-  correlated and cannot be pooled into a sign test.
+- **Consistency is not significance.** The candidate wins on ten of eleven conditions, but
+  the conditions are the same images under different degradations, so they are heavily
+  correlated and cannot be pooled into a sign test. Ten-of-eleven is not eleven binomial
+  trials; it is closer to one observation repeated with variations.
 
 **Revised guidance.** Report both bars, and label which question each answers. For "does
 this pipeline clear the bar", use ±2.8 at n=320. For "is A better than B on this set",
