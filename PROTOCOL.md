@@ -117,6 +117,13 @@ resample AI and real images separately to preserve class balance, then score **b
 systems on the same resampled images). Candidate `native+squash` against the shipped
 `official+native`:
 
+Both columns are scored with a threshold fitted **on the clean condition only**, because
+that was the shipping rule at the time. This is therefore a like-for-like comparison of two
+view pairs, and it is *not* a table of what either scores as finally shipped: the build that
+came out of this fits its threshold by minimax over all eleven conditions instead, which
+moves the levels (`sieve_hard`, for one, goes to 79.0%). Read the *difference* between the
+columns, which is what the table is for — not the levels.
+
 | condition | shipped | candidate | diff | 95% CI of the paired diff |
 |---|---:|---:|---:|---|
 | none | 85.7% | 88.7% | +3.0 | +0.6 .. +5.6 |
