@@ -98,6 +98,65 @@ If you want to rank submissions that finish within a few points of each other, t
 has to grow — the protocol does not rescue you from that, it just makes the requirement
 visible.
 
+### Correction (2026-08-15): that is the right error bar for the wrong question
+
+The paragraph above is correct about one thing and wrong about what it then tells you to
+do with it, so I am fixing it rather than quietly editing it.
+
+±2.8 points is the standard error of **one** balanced accuracy, estimated once. It is the
+right bar for an *absolute* claim — "this pipeline clears 75%". But nearly every use of it,
+including all three in my own text above, is a **comparison of two systems scored on the
+same images**. That is a paired design. Both systems see the same photos and make
+correlated errors on them, so the quantity that governs the comparison is the standard
+error of the *difference*, and it is smaller — often much smaller — than 2× the SE of
+either side. Using the unpaired figure as a floor for a difference is not conservative in
+a harmless direction: it silently throws away real improvements.
+
+I measured it on my own data (`paired.py`, stratified paired bootstrap, 20,000 resamples:
+resample AI and real images separately to preserve class balance, then score **both**
+systems on the same resampled images). Candidate `native+squash` against the shipped
+`official+native`:
+
+| condition | shipped | candidate | diff | 95% CI of the paired diff |
+|---|---:|---:|---:|---|
+| none | 85.7% | 88.7% | +3.0 | +0.6 .. +5.6 |
+| sieve_hard | 72.3% | 75.4% | +3.0 | +0.8 .. +5.4 |
+| jpeg90 | 84.7% | 87.6% | +2.9 | +0.3 .. +5.6 |
+| jpeg75 | 83.1% | 87.0% | +3.9 | +1.3 .. +6.7 |
+| jpeg60 | 79.1% | 80.0% | +0.9 | −1.4 .. +3.3 |
+
+(Five of the eleven pipelines, the ones scored at the time of writing; the remaining six
+are still running and will be added to this table rather than replacing it.)
+
+The paired interval is about ±2.5 points wide, not ±5.6, and **four of five exclude zero**
+— including `sieve_hard`, the one pipeline my extension fails. Under my published rule all
+five of those were "noise". Four of them are not. I said above that I had thrown away two
+of my own repairs on this rule and that it was not rhetorical; that part is still true, and
+it is now the cost of the error rather than evidence of rigour.
+
+Three things I want stated plainly, because each is a way this correction could be misread:
+
+- **I changed the test after seeing the data.** That is the move that manufactures results,
+  and naming it does not neutralise it. What makes this a fix and not a rationalisation is
+  that the paired test is more appropriate *a priori* — it would have been the right choice
+  before I looked, for reasons that have nothing to do with which answer it gives. It is
+  still not a licence to ship: a difference that clears here earns a **new**
+  pre-registered validation on held-out generators, not an edit to the detector.
+- **"The improvement is real" is not "the result clears the bar."** `sieve_hard` at 75.4%
+  beats the shipped path by a margin that excludes zero, *and* 75.4% against a 75.0%
+  threshold is an absolute claim carrying the full unpaired ±2.8. The gain is established.
+  The clearance is not. These are two different questions and they take two different error
+  bars; that is the whole content of this correction.
+- **Consistency is not significance.** The candidate wins on every condition, but the
+  conditions are the same images under different degradations, so they are heavily
+  correlated and cannot be pooled into a sign test.
+
+**Revised guidance.** Report both bars, and label which question each answers. For "does
+this pipeline clear the bar", use ±2.8 at n=320. For "is A better than B on this set",
+compute the paired interval — do not assume mine transfers, it depends on how correlated
+the two systems are, and two genuinely different architectures will be less correlated than
+two view-subsets of one model.
+
 ## Reporting format
 
 One row per pipeline: `pipeline, n_ai, n_real, balanced_acc, recall, specificity`, plus a

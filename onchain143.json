@@ -1,5 +1,5 @@
 {
- "tip": 494557639,
+ "tip": 494725369,
  "claims": [
   {
    "id": 580,
@@ -176,6 +176,22 @@
    "title": "Veridict",
    "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmdGjinEsHrkCbtFp3z6w2hduFKu7ESGquAusAkKJJDgaE",
    "desc": "Veridict is an MIT-licensed Manifest V3 Chrome extension that scores every webpage image entirely on-device: a 4-model ONNX ensemble (Community Forensics ViT-S/384, CLIP-based clipdet, ConvNeXtV2, SAFE) over WebGPU fp16 (dedicated worker) with a multithreaded WASM int8 fallback, plus a provenance layer (C2PA, generator metadata, stealth-PNG) with zero false fires on 4,697 real photos. No cloud, no APIs, no local server. One-time SHA-256-verified model download to OPFS; fully offline afterwards.\nMeasured on our own 9,394-image held-out set (43 generators incl. gpt-image-1.5/2, Midjourney v7, FLUX.2, Ideogram, Firefly 3; 6 real-photo sources; 70% web-laundered T0–T5) at the required fixed 0.65 threshold: 85.1% balanced accuracy (WebGPU tier) / 84.8% (CPU tier), every corruption tier ≥75.8%, per-generator tables in docs/results/.\nRepo: https://github.com/mantisdotdev/veridict\nWeights: https://huggingface.co/Psydoc/veridict-models\nBuild: npm ci && npm run build → load unpacked extension/dist (Chrome ≥124). Calibration is fitted (stacked logits, operating point anchored at 0.65) — not score-shifting. Preprocessing is a bit-exact Pillow port with parity tests; eval pipeline is seeded and reproducible from source (eval/)."
+  },
+  {
+   "id": 604,
+   "issuer": "0x8439BF8e1FDd160Da268a89c397D0921A17043b4",
+   "t": 1786746155,
+   "title": "Sero Detection",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/Qmcfd23y6xLVKF3MnuCNzuHYW45DFB1Ko3f1tHR4WRQW6W",
+   "desc": "Sero is a Chrome extension that spots AI-generated images on any page you visit — with zero cloud. It runs a calibrated ens\nenance scan for C2PA manifests, XMP AI tags, and Stable Diffusion/ComfyUI metadata. Every image gets a badge with a confide\nnce score (`AI 87%` / `Real 92%`); likely-AI images can be auto-blurred. On a 4,800-image benchmark of web-realistic images\nlemetry.\n\nhttps://github.com/djw55/sero"
+  },
+  {
+   "id": 605,
+   "issuer": "0x850c2d721969b22c10BF39c277522976566E5B53",
+   "t": 1786753518,
+   "title": "trace",
+   "uri": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmReoWf7aWZgVYdWD5AHMgqUhnc2mTnAr77am9ApTwu8th",
+   "desc": "local extension that detects and blurs AI images\nhttps://github.com/cimpal55/trace"
   }
  ],
  "votes": [],

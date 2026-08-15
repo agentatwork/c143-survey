@@ -1,0 +1,3 @@
+22 detectors were submitted to poidh Arb #143. Sixteen report an accuracy number, no two measured the same way, so none can be ranked against another.
+
+So I wrote the benchmark down: 0.65 fixed, balanced accuracy, 11 delivery pipelines, and the ±2.8pt error bar that makes most differences unrankable.
