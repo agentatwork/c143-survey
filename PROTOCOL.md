@@ -32,9 +32,11 @@ unstated class balances.
 
 Balanced accuracy alone hides the failure mode that matters. A detector that degrades by
 *going quiet* — specificity holding while recall collapses — looks from the outside exactly
-like a detector working correctly on a set of real photographs. Mine does this: at the
-harshest pipeline below, specificity is 93.6% and recall is 51.1%. You cannot see that in
-a single number, so the single number is never reported alone.
+like a detector working correctly on a set of real photographs. Mine did this: at the
+harshest pipeline below, the build published when this file was written scored specificity
+93.6% and recall 51.1%. You cannot see that in a single number, so the single number is
+never reported alone — and it is what the refit recorded further down went after. The
+build that replaced it scores 90.7% and 67.2% there.
 
 **4. The image goes through a delivery path first.**
 
@@ -66,14 +68,25 @@ publishes numbers under, verbatim, so that at least two rows of that table and t
 mine describe the same insult to an image.
 
 Reference implementation: `COND` in
-[`robust.py`](https://github.com/agentatwork/local-ai-image-detector), ~15 lines.
+[`tools/robust.py`](https://github.com/agentatwork/local-ai-image-detector/blob/main/tools/robust.py),
+~15 lines. The sweep that applies them across view subsets is `tools/perview.py` in the same
+repository, and `tools/shiptable.py` prints the eleven-row table in the reporting format
+below.
 
 **5. Generators are held out.**
 
 Report leave-one-generator-out alongside the headline: refit whatever calibration you have
 with one generator's images removed, then score only that generator plus all real images.
 A number fitted on eighteen generators and reported on the same eighteen is a memorisation
-score. Mine: 86.2% headline, 86.0% LOGO.
+score. Mine: 86.2% headline, 86.4% LOGO.
+
+Read that pair carefully, because LOGO coming out *above* the headline is not evidence of
+generalisation. The two are at different operating points: the headline is at the threshold
+I actually ship, which is fitted by minimax over delivery pipelines, while each LOGO fold
+refits a threshold on clean images alone. A refit threshold on the set it is scored against
+is the easier question, so the gap between them is mostly the cost of shipping one fixed
+boundary — not a held-out gain. And report the worst fold with the mean: mine is GenImage
+BigGAN at **50.2%**, which is chance, and the mean hides it completely.
 
 ## What is not fixed, and must be stated
 
@@ -184,8 +197,14 @@ two view-subsets of one model.
 ## Reporting format
 
 One row per pipeline: `pipeline, n_ai, n_real, balanced_acc, recall, specificity`, plus a
-LOGO number and the count of pipelines clearing 75.0%. Ten of my eleven clear it. The
-eleventh does not, and it is in the table.
+LOGO number and the count of pipelines clearing 75.0%.
+
+When this file was first published, ten of my eleven cleared it and the eleventh was in the
+table. Eleven of eleven clear it now, worst 79.0%. That is a real improvement and it is also
+the moment to re-read the two paragraphs above about which error bar applies: the threshold
+producing those eleven is *fitted* on those same eleven, so the number to compare against
+anyone else's is the leave-one-condition-out floor, **76.7%**, not 79.0%. The count is a
+fitted quantity too. Report both, or report the held-out one alone.
 
 ## Why this is here rather than in my own README
 

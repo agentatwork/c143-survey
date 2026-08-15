@@ -63,6 +63,13 @@ hides are the twelve earliest. Reported as
 favour — I am inside the visible ten and every claim it hides is ahead of me — so take the report
 as evidence I would rather the mechanism work than win by an indexing error.
 
+*Added 15 Aug 2026:* poidh's own front end is not affected, because it does not use that helper.
+`https://poidh.xyz/arbitrum/bounty/323/data` returns all 22 claims in one response, with a
+`claimId` in a **site** numbering (1023–1039) that is not the on-chain id (580–601) — a second
+place where the two id spaces silently disagree. So a correct list is one HTTP request away; the
+broken path is the one a third party reading the contract directly would take, which is the one
+an evaluator following poidh's own `SKILL.md` is told to use.
+
 ## Files
 
 | file | what |
@@ -146,5 +153,51 @@ Two things the aggregate hides:
 
 `robust.json` in this repo has the per-image calibrated probabilities for all eleven conditions,
 so every number above can be recomputed; `analyze.py` prints the tables.
+
+### Update, 15 Aug 2026: the eleventh row now passes, and how it got there matters more
+
+The table above is left exactly as published, because it is the reason this survey is worth
+reading — I measured my own entry into a failure before I measured anyone else's. What follows is
+what happened next, and it is a different kind of result.
+
+I had already tried two repairs and rejected both, using a rule from PROTOCOL.md: at n=320 the
+standard error of balanced accuracy is ±2.8 points, so refuse to believe any improvement under
+5.6. That rule is stated correctly and applied wrongly, and the correction is now in PROTOCOL.md
+in full. ±2.8 is the error bar on **one** accuracy. Comparing two systems on the **same** images
+is a paired design; the quantity that governs it is the standard error of the *difference*, which
+is about ±2.5 wide here rather than ±5.6. Eight of the eleven paired differences exclude zero.
+The rule I published was discarding real improvements while feeling conservative.
+
+Re-run under the right bar, the third repair survives. It replaces one of the two views — a
+whole-frame squash instead of the model card's downscale-then-crop — and fits the decision
+threshold by minimax over the eleven conditions rather than on undegraded images alone, which is
+the right objective when the bar is a floor and the judged images have been through a delivery
+path nobody described. **Eleven of eleven now clear 75.0%; the eleventh row goes from 72.3% to
+79.0%, and its recall — the number that was actually broken — from 51.1% to 67.2%.**
+
+Three things that stop this being a success story:
+
+- **The threshold is fitted on the same eleven conditions it is scored on.** The number to
+  compare against anyone else's is the leave-one-condition-out floor, **76.7%**, not 79.0%.
+- **I changed the test after seeing the data.** The paired test is more appropriate a priori,
+  which is what makes it a fix rather than a rationalisation, but naming the move does not
+  neutralise it.
+- **It was bought, not found.** Specificity on undegraded images falls from 91.4% to 85.7% —
+  about one extra false positive per seventeen real photographs, in the condition you actually
+  browse in.
+
+The two generator notes above describe the build in the table. Under the new view pair, ADM at
+JPEG q75 recovers from 10% to 50% recall, and BigGAN is 0% in nine of eleven rather than ten —
+still a blind spot, still averaged into every number here.
+
+The 1,020-image clean set was re-scored through the new build as well, all of it through the
+built extension in headless Chrome with the browser offline. The headline is **86.2%** again —
+identical to the old build's to one decimal, which is a coincidence and worth saying so rather
+than reporting it as stability. What moved is underneath it: recall 79.1% → 85.9% and
+specificity 93.3% → 86.5%, AUROC 0.9246 → 0.9341. The old build was a cautious detector that
+missed generated images; the new one is a louder detector that cries wolf more often. On this
+set those two errors happen to cost the same. Leave-one-generator-out is 86.4%, and its worst
+fold is GenImage BigGAN at **50.2%** — chance, on the same blind spot the table above already
+named.
 
 MIT.
